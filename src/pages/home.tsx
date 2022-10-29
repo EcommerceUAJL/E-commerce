@@ -20,10 +20,10 @@ const HomeExample: FC<THomeProps> = ({ blogPosts = [] }) => {
   );
 };
 
-export const getServerSideProps: GetServerSideProps<THomeProps> = async (
-  ctx,
-) => {
-  return { props: {} };
-};
+// export const getServerSideProps: GetServerSideProps<THomeProps> = async (
+//   ctx,
+// ) => {
+//   return { props: {} };
+// };
 
 export default HomeExample;
