@@ -10,8 +10,15 @@ export const NavContainer = styled.div`
 
 export const NavOptions = styled.div`
   display: flex;
-  margin: 10px 0;
+  padding: 5px 0;
   justify-content: space-around;
   margin: auto;
   font-size: 12px;
+`;
+export const SearchBar = styled.input`
+  width: 100%;
+  height: 35px;
+  padding: 10px;
+  background-color: white;
+  border: none;
 `;
