@@ -1,5 +1,6 @@
 import HeadGlobal from 'src/components/Head/Head';
 import Image from 'next/image';
+import Card from 'src/components/Card/Card';
 import Nav from 'src/components/Nav/Nav';
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
 
       <main>
         <Nav />
+        <Card />
       </main>
 
       <footer>
