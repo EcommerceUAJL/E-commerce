@@ -13,19 +13,16 @@ const Card = () =>
     };
 
     return (
-      <div>
-        <div className={styles.card}>
-          {/* <Image
+      <div className={styles.card}>
+        {/* <Image
             className={styles.background_img}
             src={product.img}
             alt={product.name}
           /> */}
-          <div className={styles.card_info}>
-            <p className={styles.text_body}>{product.valor}</p>
-            <p className={styles.text_title}>{product.name}</p>
-            <p className={styles.text_title}>{product.location}</p>
-            <button className={styles.card_button}>Read More</button>
-          </div>
+        <div className={styles.card_info}>
+          <p className={styles.text_body}>{product.valor}</p>
+          <p className={styles.text_title}>{product.name}</p>
+          <p className={styles.text_title}>{product.location}</p>
         </div>
       </div>
     );
