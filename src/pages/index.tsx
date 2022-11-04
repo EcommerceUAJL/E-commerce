@@ -4,13 +4,8 @@ import Nav from 'src/components/Nav/Nav';
 
 export default function Home() {
   return (
-
     <div>
-      <Head>
-        <title>Your Store</title>
-        <meta name="description" content="Your Store" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <HeadGlobal />
 
       <main>
         <Nav />
