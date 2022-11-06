@@ -1,6 +1,5 @@
-import image from '../../assets/searchBar/search.png';
-import Image from 'next/image';
-import styles from './Card.module.css';
+import image from '../../assets/products.png';
+import { CardContainer, CardProductImg } from 'src/styles/CardStyles';
 
 const Card = () =>
   // { img, name, valor, location }
@@ -13,18 +12,18 @@ const Card = () =>
     };
 
     return (
-      <div className={styles.card}>
-        {/* <Image
-            className={styles.background_img}
-            src={product.img}
-            alt={product.name}
-          /> */}
-        <div className={styles.card_info}>
-          <p className={styles.text_body}>{product.valor}</p>
-          <p className={styles.text_title}>{product.name}</p>
-          <p className={styles.text_title}>{product.location}</p>
+      <CardContainer>
+        <div style={{ display: 'flex', width: '100%', height: '55%' }}>
+          <CardProductImg src={image} alt={product.name} />
         </div>
-      </div>
+        <div style={{ margin: '10px', marginTop: '0', color: 'black' }}>
+          <p style={{ fontSize: '20px', fontWeight: 500, lineHeight: 0 }}>
+            {product.valor}
+          </p>
+          <p style={{ fontSize: '15px', lineHeight: 1 }}>{product.name}</p>
+          <p style={{ fontSize: '15px', lineHeight: 0 }}>{product.location}</p>
+        </div>
+      </CardContainer>
     );
   };
 

@@ -7,7 +7,7 @@ import {
 } from 'src/styles/NavStyles';
 import Image from 'next/image';
 import search from '../../assets/searchBar/search.png';
-import { CenterContainer, Separator } from 'src/styles/Adjust';
+import { CenterContainer, Separator } from 'src/styles/AdjustStyles';
 
 let user = [];
 // user = ['o'];
