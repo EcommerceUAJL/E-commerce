@@ -2,7 +2,7 @@
 /dist
 /node_modules
 /.next
-
+.vscode
 # Logs
 logs
 *.log
