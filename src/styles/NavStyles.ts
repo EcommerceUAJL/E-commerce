@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const NavContainer = styled.div`
   display: flex;
+  z-index: 100;
   padding: 10px 0;
   width: 100%;
   height: auto;

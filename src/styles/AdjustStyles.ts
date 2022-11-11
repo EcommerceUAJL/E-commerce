@@ -12,3 +12,9 @@ export const Separator = styled.div`
   height: 65%;
   background-color: #d1d1d1;
 `;
+
+export const WordShortener = styled.p`
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+`;

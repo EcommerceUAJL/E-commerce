@@ -1,14 +1,20 @@
 import Image from 'next/image';
+import Foto from '../assets/products.png';
 import styled from 'styled-components';
 
 export const CardContainer = styled.div`
-  margin: 15px;
-  margin-top: 100px;
-  width: 200px;
-  height: 220px;
+  display: grid;
+  margin: 30px 0;
+  grid-template-columns: auto auto auto auto auto auto;
+`;
+
+export const CardModel = styled.div`
+  margin: 8px 6px;
+  width: 225px;
+  height: 300px;
   cursor: pointer;
   border-radius: 15px;
-  box-shadow: 0px 0px 20px -6px rgba(43, 8, 37, 0.2);
+  box-shadow: 0px 0px 9px 5px rgba(43, 8, 37, 0.2);
   background-color: #ffff;
 `;
 

@@ -1,7 +1,10 @@
 import HeadGlobal from 'src/components/Head/Head';
 import Image from 'next/image';
-import Card from 'src/components/Card/Card';
 import Nav from 'src/components/Nav/Nav';
+import CardsContainer from 'src/components/CardsContainer/CardsContainer';
+import Card from 'src/components/Card/Card';
+import { CenterContainer } from 'src/styles/AdjustStyles';
+import Slider from 'src/components/Slider/Silider';
 
 export default function Home() {
   return (
@@ -10,7 +13,10 @@ export default function Home() {
 
       <main>
         <Nav />
-        <Card />
+        <CenterContainer style={{ marginTop: '90px', flexDirection: 'column' }}>
+          <Slider />
+          <CardsContainer />
+        </CenterContainer>
       </main>
 
       <footer>
