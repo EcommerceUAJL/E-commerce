@@ -5,7 +5,7 @@ import styled from 'styled-components';
 export const CardContainer = styled.div`
   display: grid;
   margin: 30px 0;
-  grid-template-columns: auto auto auto auto auto auto;
+  grid-template-columns: repeat(6, auto);
 `;
 
 export const CardModel = styled.div`
