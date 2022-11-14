@@ -18,3 +18,7 @@ export const WordShortener = styled.p`
   text-overflow: ellipsis;
   white-space: nowrap;
 `;
+
+export const Text = styled.span`
+  font-size: 13px;
+`;

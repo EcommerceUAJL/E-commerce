@@ -56,7 +56,12 @@ const Nav = () => {
             <Link href="/favorites">Favorites</Link>
           </NavOptions>
         ) : (
-          <NavOptions style={{ width: '250px', margin: 'auto' }}>
+          <NavOptions
+            style={{
+              width: '250px',
+              margin: 'auto',
+            }}
+          >
             <Link href="/categories">Categories</Link>
             <Link href="/offers">Offers</Link>
             <Link href="/popular">Popular</Link>

@@ -16,6 +16,12 @@ export const CardModel = styled.div`
   border-radius: 15px;
   box-shadow: 0px 0px 9px 5px rgba(43, 8, 37, 0.2);
   background-color: #ffff;
+  transition: 0.3s;
+  ${(props) => (props.animation ? 'pink' : '#3c7f8b')}
+  &:hover {
+    z-index: 10;
+    transform: scale(1.05);
+  }
 `;
 
 export const CardProductImg = styled(Image)`

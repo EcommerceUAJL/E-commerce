@@ -28,7 +28,7 @@ const Card = () => {
         <WordShortener
           style={{
             fontSize: '13px',
-            color: 'gray',
+            color: '#000000ec',
             lineHeight: '1.6',
           }}
         >
