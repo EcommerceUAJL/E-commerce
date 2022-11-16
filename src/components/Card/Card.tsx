@@ -1,20 +1,19 @@
-import image from '../../assets/products.png';
 import { CardModel, CardProductImg } from 'src/styles/CardStyles';
 import { WordShortener } from 'src/styles/AdjustStyles';
 
-const Card = () => {
-  // { img, name, valor, location }
-  let product = {
-    valor: '$46841',
-    name: 'Kit De Cartuchos De Tinta Hp 667 Tricolor + Negro Origina',
-    img: { image },
-    location: 'Mar del Plata',
-  };
+export type CardProps = {
+  img: any;
+  name: string;
+  value: string;
+  location: string;
+  animation: boolean;
+};
 
+const Card = ({ img, name, value, location, animation }: CardProps) => {
   return (
-    <CardModel>
+    <CardModel animation={animation}>
       <div style={{ display: 'flex', width: '100%', height: '61%' }}>
-        <CardProductImg src={image} alt={product.name} />
+        <CardProductImg src={img} alt={name} />
       </div>
       <div
         style={{
@@ -24,7 +23,7 @@ const Card = () => {
           lineHeight: '0',
         }}
       >
-        <p style={{ fontSize: '25px' }}>{product.valor}</p>
+        <p style={{ fontSize: '25px' }}>{value}</p>
         <WordShortener
           style={{
             fontSize: '13px',
@@ -32,7 +31,7 @@ const Card = () => {
             lineHeight: '1.6',
           }}
         >
-          {product.name} <br /> {product.location}
+          {name} <br /> {location}
         </WordShortener>
       </div>
     </CardModel>

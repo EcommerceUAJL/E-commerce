@@ -6,7 +6,10 @@ const Slider = () => {
     'https://www.registrodemarcasenmexico.com.mx/wp-content/uploads/2021/10/shutterstock_1108681484-2.jpg';
 
   return (
-    <CardModel style={{ cursor: 'default', width: '1408px', height: '400px' }}>
+    <CardModel
+      animation={false}
+      style={{ cursor: 'default', width: '1408px', height: '400px' }}
+    >
       <img
         width="1408px"
         height="400px"
