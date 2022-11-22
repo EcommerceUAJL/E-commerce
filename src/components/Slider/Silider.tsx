@@ -7,7 +7,7 @@ const Slider = () => {
 
   return (
     <CardModel
-      animation={false}
+      theme={{ animation: false }}
       style={{ cursor: 'default', width: '1408px', height: '400px' }}
     >
       <img

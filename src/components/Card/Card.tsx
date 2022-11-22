@@ -11,7 +11,7 @@ export type CardProps = {
 
 const Card = ({ img, name, value, location, animation }: CardProps) => {
   return (
-    <CardModel animation={animation}>
+    <CardModel theme={{ animation: animation }}>
       <div style={{ display: 'flex', width: '100%', height: '61%' }}>
         <CardProductImg src={img} alt={name} />
       </div>
